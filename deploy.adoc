@@ -1,0 +1,5 @@
+# 指定环境
+go env -w GOOS=linux
+
+# 打包
+go build -o ./test/go_new
