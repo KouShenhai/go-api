@@ -19,7 +19,8 @@ func Test1(t *testing.T) {
 		toReadSingle(0x25, 0, 0, 0, 0, 0),
 		toReadSingle(0xA4, 3, 0, 0, 0, 0),
 	)
-	fmt.Println(hex.EncodeToString(array))
+	h := hex.EncodeToString(array)
+	fmt.Println(h)
 }
 
 func toReadSingle(a, b, c, d, e, f int32) []byte {
